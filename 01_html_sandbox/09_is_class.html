@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Div, span, id and class</title>
+
+  <style>
+
+    .card {
+      border: 1px solid #ccc;
+      background: #f4f4f4;
+      padding: 20px;
+      margin-bottom: 10px;
+    }
+
+    .enhance {
+      color: yellow;
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div id="main-header" class="card">
+    <h1>My Website</h1>
+    <p>A site about me</p>
+  </div>
+
+  <ul id="main-nav">
+    <li><a href="main-header">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>    
+  
+  <div id="about" class="card">
+    <h2>About</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <span class="enhance">Ipsam veniam vel tempore recusandae obcaecati, mollitia, </span> aperiam illo ullam perferendis necessitatibus doloribus beatae laboriosam earum. Odio neque, adipisci reprehenderit ut, ab voluptatem dolor ipsum aspernatur fuga iure at iusto quas! Facere quis suscipit molestias nemo magnam doloremque inventore sit, aperiam repellendus.</p>
+  </div>
+
+  <div id="contact" class="card">
+    <h2>Contact Me</h2>
+    <ul>
+      <li>Adress: sdfsdfsdf</li>
+      <li>Phone: 4465464 654</li>
+      <li>Email: asdasda@sadas.com</li>
+    </ul>
+  </div>
+
+  <div id="footer">
+    <p>Copyright &copy; 2020</p>
+  </div>
+</body>
+</html>

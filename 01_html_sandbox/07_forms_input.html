@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="process.php">
+    <div>
+      <label for="name">Name</label><br>
+      <input type="text" name="name" id="name" placeholder="john doe">
+    </div>
+    <div>
+      <label for="email">Email</label><br>
+      <input type="email" name="email" id="email">
+    </div>
+    <div>
+      <label for="message">Message</label><br>
+      <textarea name="message" id="message" cols="30" rows="10"></textarea>
+    </div>
+    <div>
+      <label for="sex">Sex</label>
+      <select name="sex" id="sex">
+        <option value="male">Male</option>
+        <option value="female" selected>Female</option>
+      </select>
+    </div>
+    <div>
+      <label for="age">Age</label><br>
+      <input type="number" name="age" id="age">
+    </div>
+    <div>
+      <label for="birth">Birthdate</label><br>
+      <input type="date" name="birhdate" id="birthdate">
+    </div>
+    <div>
+      <label for="membership">Membership</label>
+      <input type="radio" name="membership" id="id1" value="simple">Simple
+      <input type="radio" name="membership" id="id2" value="standard" >Standard
+      <input type="radio" name="membership" id="id3" value="premium" checked>Premium
+    </div>
+    <div>
+      <label for="hobies">Hobbies</label>
+      <input type="checkbox" name="hobbies" id="hobby1" value="bike">Bike
+      <input type="checkbox" name="hobbies" id="hobby2" value="car" checked>Car
+      <input type="checkbox" name="hobbies" id="hobby3" value="boat">Boat
+    </div>
+    <button type="submit">Submit</button>
+    <input type="submit" value="Submit">
+
+    <button type="reset">Reset</button>
+
+  </form>
+
+</body>
+</html>
