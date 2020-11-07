@@ -1,0 +1,7 @@
+  body {
+    background: black;
+  }
+  #widescreen h1 {
+    /* display: block; */
+    visibility: visible;
+  }       
