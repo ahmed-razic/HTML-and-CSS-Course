@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;      
+    }
+
+    #showcase {
+      background: #666;
+      height: 100vh;
+      padding: 10px;
+    }
+
+    .container {
+      margin: 10px auto;
+      /* padding: 10px 0; */
+      width: 80%;
+      background: red;
+    }
+
+    .small-container {
+      display: flex;
+      padding: 10px;
+      height: 400px;
+      flex-flow: row wrap;
+
+      justify-content: space-between;
+      align-items: center;
+
+    }
+
+    .box-13 {
+      align-self: flex-start;
+    }
+
+    .box-9 {
+      align-self: flex-end;
+    }
+
+    .box-7 {
+      align-self: stretch;
+    }
+
+
+    .box {
+      margin: 30px;
+      padding: 20px;
+      border: 1px yellow dashed;
+      text-align: center;
+    }
+
+    .box:nth-child(even) {
+      background: yellow;
+      /* display: none; */
+    }
+
+    .box:nth-child(odd) {
+      background: green;
+    }
+
+    .small-container-2 {
+      display: flex;
+      flex-wrap: wrap;
+      height: 450px;
+
+      justify-content: space-between;
+      align-items: flex-start;
+
+      align-content: center;      
+    }
+
+  </style>
+</head>
+<body>
+  <div id="showcase">
+    <div class="container">
+      <div class="small-container">
+        <div class="box box-1"><h3>Item </h3></div>
+        <div class="box box-2"><h3>Item </h3></div>
+        <div class="box box-3"><h3>Item </h3></div>
+        <div class="box box-4"><h3>Item </h3></div>
+        <div class="box box-5"><h3>Item </h3></div>
+        <div class="box box-6"><h3>Item </h3></div>
+        <div class="box box-7"><h3>Item </h3></div>
+        <div class="box box-8"><h3>Item </h3></div>
+        <div class="box box-9"><h3>Item </h3></div>
+        <div class="box box-10"><h3>Item </h3></div>
+        <div class="box box-11"><h3>Item </h3></div>
+        <div class="box box-12"><h3>Item </h3></div>
+        <div class="box box-13"><h3>Item </h3></div>
+        <div class="box box-14"><h3>Item </h3></div>
+      </div>      
+    </div>
+
+    <div class="container">
+      <div class="small-container-2">
+        <div class="box box--1"><h3>Item </h3></div>
+        <div class="box box--2"><h3>Item </h3></div>
+        <div class="box box--3"><h3>Item </h3></div>
+        <div class="box box--4"><h3>Item </h3></div>
+        <div class="box box--5"><h3>Item </h3></div>
+        <div class="box box--6"><h3>Item </h3></div>
+        <div class="box box--7"><h3>Item </h3></div>
+        <div class="box box--8"><h3>Item </h3></div>
+      </div>      
+    </div> 
+  </div>     
+</body>
+</html>
