@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Shadows</title>
+  <style>
+    .container {
+      height: 100vh;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: space-around;
+    }
+
+    .box {
+      width: 220px;
+      padding: 1rem;
+      margin: 1rem;
+      background: coral;
+      color: #fff;           
+    }
+
+    .box-1 {
+      box-shadow: 10px 10px teal;
+    }
+
+    .box-2 {
+      box-shadow: 10px 10px 20px teal;
+    }
+
+    .box-3 {
+      box-shadow: 10px 10px 20px 5px teal;
+    }
+
+    .box-4 {
+      box-shadow: inset -10px -10px teal;
+    }
+
+    .box-5 {
+      box-shadow: 10px 10px 20px teal, 20px 20px 40px red;
+    }
+
+    .box-6 {
+      box-shadow: -10px -10px yellow;
+    }
+
+    .box-7 {
+      box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box box-1">
+      <h3>Heading</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, quod.</p>
+    </div>
+    <div class="box box-2">
+      <h3>Heading</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, quod.</p>
+    </div>
+    <div class="box box-3">
+      <h3>Heading</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, quod.</p>
+    </div>
+    <div class="box box-4">
+      <h3>Heading</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, quod.</p>
+    </div>
+    <div class="box box-5">
+      <h3>Heading</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, quod.</p>
+    </div>
+    <div class="box box-6">
+      <h3>Heading</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, quod.</p>
+    </div>
+    <div class="box box-7">
+      <h3>Heading</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, quod.</p>
+    </div>
+  </div>
+</body>
+</html>

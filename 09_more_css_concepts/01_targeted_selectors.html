@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Targeted Selectors</title>
+
+  <style>
+
+    /* All p-s in div */
+    div p {
+      background: #ddd;
+    }
+
+    /* All p-s which are direct children of div */
+    div > p {
+
+    background: #666;
+    }
+
+    /* p directly after div */
+    div + p {
+      background: #333;
+    }
+
+    /* By atribut */
+
+    a[target] {
+      background: red;
+      color: aliceblue;
+    }
+
+    a[target="_self"] {
+      background: blue;
+      color: aliceblue;
+    }
+
+    input {
+      width: 100%;
+      margin-bottom: 10px;      
+    }
+
+    input[type="email"] {
+      width: 50%;
+    }
+
+  </style>
+</head>
+<body>
+   <div>
+     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, eum?</p>
+
+     <ul>
+       <li>Item 1</li>
+       <li><p>Item 2</p></li>
+       <li>Item 3</li>
+     </ul>
+
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, doloribus!</p>
+   </div>
+
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, quas!</p>
+
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, saepe.</p>
+
+
+
+   <a href="#">Page1</a>
+   <a href="#" target="_self" >Page2</a>
+   <a href="http://google.com" target="_blank">Google</a>
+
+   <br><br>
+
+   <form action="">
+    <input type="text" name="text" id="name" placeholder="Name">
+    <input type="email" name="email" id="email" placeholder="Email">
+    <input type="submit" value="Submit">
+
+
+   </form>
+
+</body>
+</html>

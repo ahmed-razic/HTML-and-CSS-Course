@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Before & After</title>
+  <style>
+    .is-required:after {
+      content: "*";
+      color: red;
+      padding-left: 5px;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #333;
+      color: #fff;
+      margin: 0;      
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center; 
+      height: 100vh;
+    }
+
+    header:before {
+      content: "";
+      background: url("https://source.unsplash.com/1600x900/?nature,water") no-repeat center center/cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0.4;
+      z-index: -1;
+    }
+
+    header > h1 {
+      font-size: 4rem;
+      margin: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- <label for="name" class="is-required">Name</label>
+  <input type="text" name="name" id="name"><br><br>
+  <label for="name"></label>Name</label>
+  <input type="text" name="name" id="name"><br><br>
+  <label for="name" class="is-required">Name</label>
+  <input type="text" name="name" id="name"><br><br>
+  <label for="name">Name</label>
+  <input type="text" name="name" id="name"><br><br>
+  <label for="name" class="is-required">Name</label>
+  <input type="text" name="name" id="name"> -->
+
+    <header>
+      <h1>Hello World</h1>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, ipsa.</p>
+    </header>
+
+    <section>
+      <h3>Lorem ipsum dolor sit amet.</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, repellendus. Porro cupiditate voluptatem tempore non excepturi expedita minus, ex ipsum nihil incidunt nemo consectetur? Totam eligendi est ipsum voluptatibus sit!</p>
+    </section>
+
+</body>
+</html>

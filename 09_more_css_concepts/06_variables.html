@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variables</title>
+  <style>
+    :root {
+      --light-gray: #f4f4f4;
+      --dark-gray: #333;
+      --secondary-color: steelblue;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.4;
+      background: #f4f4f4;
+      --div-width: 500px;
+    }
+
+    header {
+      background-color: var(--dark-gray);
+      color: var(--light-gray);
+    }
+
+    .box {
+      background-color: var(--secondary-color);
+      width: var(--div-width);
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>CSS Variable</h1>
+  </header>
+  <div class="container">
+    <div class="box box-1">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit magnam ad voluptatum dolore aliquid quam.</p>
+    </div>
+    <br><br>
+    <div class="box box-2">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit magnam ad voluptatum dolore aliquid quam.</p>
+    </div>
+  </div>
+</body>
+</html>
