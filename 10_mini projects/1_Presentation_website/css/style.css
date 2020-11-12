@@ -1,0 +1,91 @@
+:root {
+  --page1-color: steelblue;
+  --page2-color: tan;
+  --page3-color: teal;
+  --page4-color: slateblue;
+  --animate-speed: 3s;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Page colors */
+
+#page1 { background: var(--page1-color); }
+#page2 { background: var(--page2-color); }
+#page3 { background: var(--page3-color); }
+#page4 { background: var(--page4-color); }
+
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  padding: 0 4rem;
+}
+
+#page1 h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin: 1rem;  
+}
+
+.page p {
+  font-size: 1.3rem;
+}
+
+.btn {
+  background: #f4f4f4;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: none;
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  color: #333;
+
+  transition: all 0.3s ease-out;
+}
+
+.btn:hover,
+.btn-dark {
+  background: #333;
+  color: #fff;
+}
+
+.btn-dark:hover {
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Page Animation */
+#page1 h1 {
+  transform: translateY(-1200px);
+  animation: heading var(--animate-speed) forwards ease-in;
+}
+
+@keyframes heading {
+  to {
+    transform: translatey(0);
+  }
+}
+
+#page1 p {
+  transform: translateX(-1600px);
+  animation: paragraph var(--animate-speed) forwards ease-out;
+}
+
+@keyframes paragraph {
+  to {
+    transform: translateX(0);
+  }
+}
