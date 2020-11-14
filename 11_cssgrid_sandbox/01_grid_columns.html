@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Columns</title>
+
+  <style>
+    .grid {
+      display: grid;
+      /* grid-template-columns: 200px 200px 200px;
+      grid-template-columns: 200px auto 200px;
+      grid-template-columns: auto auto auto; */
+
+      grid-template-columns: repeat(2, 2fr) auto;
+
+    }
+    .item {
+      border: 1px solid #ccc;
+      background: #f4f4f4;
+      padding: 3rem;
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .main {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 1.5rem;
+    }
+
+    .main > div {
+      text-align: justify;
+      line-height: 1.4;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+    <div class="item">Item 5</div>
+    <div class="item">Item 6</div>
+  </div>
+
+  <section class="main">
+    <div>
+      <h3>Welcome to my site</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae corporis ex illo necessitatibus, quo architecto?Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit possimus obcaecati tempora nulla officiis accusantium, architecto cum minus. Omnis tenetur doloremque cumque officiis veniam itaque, impedit perspiciatis possimus voluptas! Cum saepe deleniti rerum tempore ipsam qui quod possimus! Aspernatur numquam laborum officiis illo atque, tempore porro aperiam, sunt omnis placeat, enim magni fugit eveniet! Porro placeat, reprehenderit ex dolore a eligendi amet, libero magnam sequi iste esse! Ullam magni quasi laboriosam, consequatur delectus tenetur distinctio. Nihil sed, reprehenderit est amet minima architecto esse nulla dolorum enim eligendi quae eius repellendus vitae quos! Quod molestias earum, libero perspiciatis omnis tenetur consequuntur? </p>
+    </div>
+    <div>
+      <h3>Hello Guys</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae corporis ex illo necessitatibus, quo architecto?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aliquam corrupti id earum? Consectetur quasi expedita obcaecati quibusdam molestiae deserunt sapiente numquam deleniti quia possimus, voluptatibus a odio harum quod iure ipsam saepe, laudantium sint ab eligendi odit et ex architecto corrupti. Nam tenetur repellendus at iste repudiandae nesciunt voluptatem. </p>
+    </div>
+  </section>
+</body>
+</html>
